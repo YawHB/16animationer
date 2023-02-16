@@ -1,0 +1,337 @@
+/* Animation 1: Falling
+   Bolden falder konstant fra oven. */
+.falling {
+  animation-name: falling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+.falling {
+  animation-name: falling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+/* Animation 2: Bouncing */
+
+.bouncing {
+  animation-name: bouncing;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translate(0, -150%);
+  }
+
+  100% {
+    transform: translate(0, 150%);
+  }
+}
+/* Animation 3. Dropping and stays down */
+
+.drop {
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /*Forwards makes the element stop at 100%*/
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 135%);
+  }
+}
+
+/* Animation 4. Pattern */
+.pattern {
+  animation-name: pattern;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pattern {
+  0% {
+    transform: translate(60px, 0px);
+  }
+  25% {
+    transform: translate(0px, 60px);
+  }
+  50% {
+    transform: translate(-60px, 0px);
+  }
+  75% {
+    transform: translate(0px, -60px);
+  }
+  100% {
+    transform: translate(60px, 0px);
+  }
+}
+
+/* Animation 5. Zoom out */
+.zoom_out {
+  animation-name: zoom_out;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom_out {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.1);
+  }
+}
+
+/* Animation 6. Zoom in */
+.zoom_in {
+  animation-name: zoom_in;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom_in {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(10);
+  }
+}
+
+/*Animation 7. Fade out  */
+.fade_out {
+  animation-name: fade_out;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation 8. fade in */
+.fade_in {
+  animation-name: fade_in;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* Animation 9. rotation 1 */
+.rotation {
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate 0deg;
+  }
+  100% {
+    transform: rotate 360deg;
+  }
+}
+
+/* Animation 10. Rotation 2 */
+.rotation2 {
+  animation-name: rotation2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0deg) translate(-150%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-150%);
+  }
+}
+
+/* Animation 11. Glow */
+
+/* .glow {
+  animation-name: glow;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(8px 8px 10px rgb(223, 233, 41));
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 8px 8px 10px rgb(223, 233, 41);
+  }
+} */
+
+/* Animation 12. blur to gray */
+
+.blur_to_gray {
+  animation-name: blur_to_gray;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes blur_to_gray {
+  0% {
+    transform: translate(-55px, 0);
+  }
+  50% {
+    transform: translate(65px, 0);
+  }
+  100% {
+    transform: translate(-55px, 0);
+  }
+}
+
+/* Animation 13. Pulse */
+.pulse {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.99);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(0.99);
+  }
+}
+
+/* Animation 14. Overshoot*/
+.overshoot {
+  animation-name: overshoot;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(
+    0.39,
+    2.2,
+    0.72,
+    0.68
+  ); /*out of the frame and back*/
+  animation-fill-mode: forwards; /*stops where it ends*/
+}
+
+@keyframes overshoot {
+  0% {
+    transform: translate(0.39px, 2.2px);
+  }
+  100% {
+    transform: translate(0.72px, 0.68);
+  }
+}
+
+/* Animation 15. Bounce */
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes bounce {
+  /* 1st bounce */
+  0% {
+    transform: translate(-55px, -55px) rotate(0deg);
+  }
+  12.5% {
+    transform: translate(-55px, 55px) rotate(50deg);
+  }
+
+  /* 2nd bounce */
+
+  25% {
+    transform: translate(-23px, -20px) rotate(100deg);
+  }
+  37.5% {
+    transform: translate(-11px, 55px) rotate(150deg);
+  }
+  /* 3rd bounce */
+
+  50% {
+    transform: translate(11px, 0px) rotate(200deg);
+  }
+  62.5% {
+    transform: translate(22px, 55px) rotate(250deg);
+  }
+
+  /* 4th bounce */
+  75% {
+    transform: translate(33px, 20px) rotate(300deg);
+  }
+  87.5% {
+    transform: translate(44px, 40px) rotate(350deg);
+  }
+  /* 5th bounce */
+  100% {
+    transform: translate(55px, 55px) rotate(400deg);
+  }
+}
